@@ -1,0 +1,124 @@
+body{background: #efefef url(image/notebook.png); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #000000;
+	font: 16px/24px Arial, Tahoma, sans-serif; color: #272727}
+a{text-decoration: none;}
+a:hover{transition: all 0.5s;}
+/*структура сайта*/
+div.mid{width: 1000px; margin: 0 auto;}
+div.header{ padding-top: 20px;
+	width: 1000px; margin: 0 auto; 
+	background: url(image/notebook.png) no-repeat fixed;
+	 				  border: 1px solid white; padding: 10px;
+					  min-height: 60px;
+					  -moz-border-radius: 30px; -webkit-border-radius: 10px; }
+	/*background: 
+	radial-gradient(rgba(255, 255, 255, 0.2), #101417 250px, transparent 250px ) 15% -200px no-repeat;
+		 background-color: #101417; background-size: 500px 500px; }*/
+
+/*шабка сайта*/
+div.topmune{float: right; height: 70px; line-height: 70px;}
+div.topmune a{margin: 0 0 0 10px; color: #ff0000;}
+div.topmune a:hover{color: #fff;}
+
+div.afisha{padding: 20px 50px 1px 50px; margin-top: 20px;
+					  background: url(image/notebook4.png) no-repeat fixed;
+	 				  border: 1px solid white; padding: 10px;
+					  min-height: 60px;
+					  -moz-border-radius: 30px; -webkit-border-radius: 15px;}
+					  /*background: url(image/raduga.png) top repeat-x;}*/
+div.afisha img{float: left;}
+div.afisha h3{font-size: 24px; font-weight: normal; text-align: center;  color: #ff0000;}
+
+/*главное меню*/
+
+/*контент сайта*/
+div.fon {background: border: 0px solid; border-top: none; padding: 40px;}
+div.block {width:  260px; float: left; margin: 0 0 0;}
+div.block1 {width: 263px; float: left; margin: 0 60px 0;}
+div.block1:nth-of-type(even) {float: center; }
+div.block2 {width:  263px; float: right; }
+div.block3 {width:  263px; float: left; margin: 10px 40px 0;}
+div.block4 {width:  263px; float: left;  margin: 10px 20px 10px;}
+div.block5 {width:  263px; float: right; margin: 10px 40px 10px;}
+div.block a h6{color: #272727;}
+/*div.anons {background: #f5f5f5; border: 1px solid #ccc; border-radius: 3px; padding: 30px;}*/
+div.anons {background: url(image/notebook4.png) no-repeat fixed;
+	 				  border: 1px solid white; padding: 30px;
+					  min-height: 10px;
+					  -moz-border-radius: 3px; -webkit-border-radius: 30px;}
+div.anons:hover {background: #e0eff4; border: 1px solid #bfd5dd; transition: all 1s;}
+div.anons img {box-shadow: 1px 1px 5px #777; transition: transform 0.5s ;}
+div.anons:hover img{transform: scale(1.1) rotate(2deg); transition: transform 1s ;}
+
+
+div.anons h4 {font-size: 20px; font-weight: normal; text-align: center; margin: 10px 0 10px; padding: 0; color: #01617d; 
+	line-height: 1px;}
+div.anons h6 {font-size: 14px; font-weight: normal; text-align: center; margin: 10px 0 10px; padding: 0; color: #000000; 
+	line-height: 18px;}
+div.anons h1{font-size: 16px; font-weight: normal; text-align: center; margin: 10px 0 0; padding: 0; color: #01617d; 
+		line-height: 20px;}
+
+
+
+
+
+
+
+
+div.rek img {position: relative;}
+@-webkit-keyframes prigskok {
+	0%{top:40px;}
+	10%{top: -30;}
+	20%{top: 40px;}
+	30%{top: -20px;}
+	40%{top: 40px;}
+	50%{top: -10px;}
+	60%{top: 40px;}
+	70%{top: 0;}
+	80%{top: 40px;}
+	95%{top: 20px;}
+	100%{top: 0;}
+}
+/*для exploler*/
+
+@keyframes prigskok {
+	0%{top:40px;}
+	10%{top: -30;}
+	20%{top: 40px;}
+	30%{top: -20px;}
+	40%{top: 40px;}
+	50%{top: -10px;}
+	60%{top: 40px;}
+	70%{top: 0;}
+	80%{top: 40px;}
+	95%{top: 20px;}
+	100%{top: 0;}
+}
+
+div.rek img:hover{-webkit-animation:prigskok 2s; animation:prigskok 2s;}
+
+
+/*подвал сайта*/
+
+
+div.footer span {margin: 0 30px; color: #FF0000 }
+div.footer{margin: 500px 50px 50px; text-align: center; text-transform: uppercase; }
+div.clear{clear: both;}
+
+
+
+/*адаптивный дизайн*/
+@media screen and (max-width: 999px){
+	div.mid{width: 95%;}
+	div.afisha h3{font-size: 15px;}
+	div.block {width: auto; margin-bottom: 40px;}
+	div.block1 {width: auto; margin-bottom: 40px;}
+	div.block2 {width: auto; margin-bottom: 40px;}
+	div.block3 {width: auto; margin-bottom: 40px;}
+	div.block4 {width: auto; margin-bottom: 40px;}
+	div.block5 {width: auto; margin-bottom: 40px;}
+}

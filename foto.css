@@ -1,0 +1,103 @@
+body{background: #efefef url(image/notebook3.png); 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #000000;
+	font: 16px/24px Arial, Tahoma, sans-serif; color: #272727}
+a{text-decoration: none;}
+a:hover{transition: all 0.5s;}
+
+/*структура сайта*/
+div.mid{width: 1000px; margin: 0 auto;}
+div.header{ padding-top: 20px;
+	width: 1000px; margin: 0 auto; 
+	background: url(image/notebook3.png) no-repeat fixed;
+	 				  border: 1px solid white; padding: 10px;
+					  min-height: 60px;
+					  -moz-border-radius: 30px; -webkit-border-radius: 10px; }
+
+
+
+/*шабка сайта*/
+div.topmune{float: right; height: 70px; line-height: 70px;}
+div.topmune a{margin: 0 0 0 10px; color: #ff0000;
+			  color: #ff0000; text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;}
+div.topmune a:hover{color: #fff;}
+div.afisha{padding: 20px 50px 1px 50px; margin-top: 20px;
+					  background: url(image/notebook5.png) no-repeat fixed;
+	 				  border: 1px solid white; padding: 10px;
+					  min-height: 60px;
+					  -moz-border-radius: 30px; -webkit-border-radius: 15px;}
+					  
+div.afisha img{float: left;}
+div.afisha h3{font-size: 24px; font-weight: normal; text-align: center;  color:  #ff0000;}
+
+/*главное меню*/
+div.menu{width: 1000px; margin: 10px  auto;}
+div.menu{background: url(image/notebook5.png) no-repeat fixed;
+	 				  border: 1px solid white; padding: 10px;
+					  min-height: 10px;
+					  -moz-border-radius: 10px; -webkit-border-radius: 10px;}
+div.menu ul{matgin: 0; padding: 0; list-style: none; text-align: center;}
+div.menu ul li {display: inline-block; margin: 5px 10px;}
+div.menu ul li a{color: #ff0000; text-transform: uppercase; text-shadow: 1px 1px 3px #0b4455;}
+div.menu ul li a:hover{color: #0b4455;}
+
+/*контент сайта*/
+div.block{width: 1100px; margin: 1px auto;}
+div.anons h4 {font-size: 20px; font-weight: normal; text-align: center; margin: 10px 0 10px; padding: 0; color: #01617d; 
+	line-height: 1px;}
+
+
+
+/*logo*/
+div.rek img {position: relative;}
+@-webkit-keyframes prigskok {
+	0%{top:40px;}
+	10%{top: -30;}
+	20%{top: 40px;}
+	30%{top: -20px;}
+	40%{top: 40px;}
+	50%{top: -10px;}
+	60%{top: 40px;}
+	70%{top: 0;}
+	80%{top: 40px;}
+	95%{top: 20px;}
+	100%{top: 0;}
+}
+/*для exploler*/
+@keyframes prigskok {
+	0%{top:40px;}
+	10%{top: -30;}
+	20%{top: 40px;}
+	30%{top: -20px;}
+	40%{top: 40px;}
+	50%{top: -10px;}
+	60%{top: 40px;}
+	70%{top: 0;}
+	80%{top: 40px;}
+	95%{top: 20px;}
+	100%{top: 0;}
+}
+
+div.rek img:hover{-webkit-animation:prigskok 2s; animation:prigskok 2s;}
+
+
+/*адаптивный дизайн*/
+@media screen and (max-width: 999px){
+	div.mid{width: 95%;}
+	div.afisha h3{font-size: 15px;}
+	div.block {width: auto; margin-bottom: 40px;}
+	div.block1 {width: auto; margin-bottom: 40px;}
+	div.block2 {width: auto; margin-bottom: 40px;}
+	div.block3 {width: auto; margin-bottom: 40px;}
+	div.block4 {width: auto; margin-bottom: 40px;}
+	div.block5 {width: auto; margin-bottom: 40px;}
+}
+
+/*подвал сайта*/
+div.footer span {margin: 0 20px; 
+				color: #ff0000;}
+div.footer{margin: 0 0 0; text-align: center; text-transform: uppercase; }
+div.clear{clear: both;}
